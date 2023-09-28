@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Alexander Mayo Website</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">Alexander Mayo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <h1>Project 2</h1>
+                            <h2 class="subheading">Creating a Custom Print</h2>
+                            <span class="meta">
+                                Posted by
+                                <a href="#!">Alexander Mayo</a>
+                                on September 28, 2023
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                                <p>For my first self-designed print, starting with an existing model and modifying slightly, I wanted to create something very simple. However, I wanted my modification to be functional, rather than aesthetic; I wanted my own addition to make something with a function which did not previously exist. I found a way to make both of these a possibility. I began with an existing model of a trapezoidal prism, using TinkerCAD to add a hole in the middle using the hexagonal prism shape present in that program. This effectively created a hollowed-out trapezoidal prism, which works well as a soap dish.</p>
+                                <figure>
+                                    <img src="assets/img/initial_sketch.jpg"
+                                    width="720",
+                                    height="339">
+                                    <figcaption>Initial sketch of my soap dish.</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="assets/img/tinker_cad.png"
+                                    width="720",
+                                    height="339">
+                                    <figcaption>TinkerCAD rendering. Note that this is actually the updated design discussed later, but it is very similar appearance to the original, differentiated only by the addition of the circular holes.</figcaption>
+                                </figure>
+                                <p>Slicing my design in Prusa Slicer proved to be fairly uneventful. Because it was such a simple design, being composed of a few basic geometric shapes, the 3D printer did not need to spend a lot of time developing finely detailed shapes, nor did the settings need to be tweaked to make such details come out well. However, one setting that was absolutely essential was the addition of support structures, which were disabled by default. This is due to my design having fairly large overhanging structures to the side, which likely would have collapsed without supports. Additionally, while not technically a print setting, I resized the model to 300%, as the original model was too small to fit a bar of soap. The lack of significant tweaking here hints at an important idea: that optimizing a print can, at least in some cases, be a matter of design as well as the print settings. By foregoing unnecessary details, I was able to create a design that prints quite quickly.</p>
+                                <figure>
+                                    <img src="assets/img/prusa_1.png"
+                                    width="720",
+                                    height="339">
+                                    <figcaption>Prusa Slicer slice of my initial design.</figcaption>
+                                </figure>
+                                <p>The printing process was not scheduled to take very long, compared to the time allotted. While we had a week, my print would take less than five hours. However, it took three tries to actually print a piece properly. In the first case, my print became detached from the print bed and stuck to the nozzle. No one was in the room at the time, resulting in a rather spectacular amorphous plastic mass being extruded from the nozzle before it was discovered. This was not damaging to the machine and was likely the result of skin oils being on the print bed. This same problem presented itself for the second printing, causing the print to become detached once again; however, this time it was caught shortly after this occurred, meaning the results were not as interesting. The third time printed with no issues, resulting in a correctly formed soap dish.</p>
+                                <figure>
+                                    <img src="assets/img/failure_1.jpg"
+                                    width="720",
+                                    height="339">
+                                    <figcaption>The first printing failure.</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="assets/img/failure_2.jpg"
+                                    width="678",
+                                    height="1440">
+                                    <figcaption>The second printing failure.</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="assets/img/first_print.jpg"
+                                    width="678",
+                                    height="1440">
+                                    <figcaption>The first print of my soap dish.</figcaption>
+                                </figure>
+                                <p>The soap dish I created shows a number of rooms for improvement, so I created a second print. One thing I failed to consider was the use of drainage holes, to allow accumulated water to leave the soap dish. These were easily added using cylinders in TinkerCAD after it was suggested to me. Furthermore, even with my rescaling, the dish was too small. Therefore, I resized it to 400% size. I also tweaked the infill slightly, increasing it from 15% to 25%, since the design was efficient enough that I had time to spare. One issue I noticed, but did not immediately address due to time constraints, was that the hole in the soap dish did not align perfectly with the prism. This resulted in small “lips” on the edge of the hole, creating significant support material that would not have been there otherwise, and resulted in the outer walls of the dish having varying thickness. In all likelihood, my design would benefit from being remodeled from the ground up, perhaps in Fusion 360 rather than TinkerCAD as the former is far more precise. This may be something I do in the future.</p>
+                                <figure>
+                                    <img src="assets/img/prusa_2.png"
+                                    width="720",
+                                    height="339">
+                                    <figcaption>Prusa Slicer slice of my modified design.</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="assets/img/second_print.jpg"
+                                    width="678",
+                                    height="1440">
+                                    <figcaption>The second print of my soap dish.</figcaption>
+                                </figure>
+                                <p>Several lessons were learned in the process of making this piece. One lesson was relatively simple: ensure that the printing bed is clean before starting a print. This is essential to prevent the print detaching from the bed, which proved to be the issue in both of my failed prints. The second concerns flexibility; in the future, I will be prepared to have multiple prints, and to take constructive criticism; the addition of the drainage holes was a very helpful suggestion. Finally, while it is something I would have begun using anyway, I have gained a new appreciation for Fusion 360 and its added precision. It will be a helpful tool to ensure that the angles in my design are properly lined up, preventing variations in thickness as seen in my soap dish. With what I have learned, I am hopeful that future designs will be significantly improved.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; Alexander Mayo 2023</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
