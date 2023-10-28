@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Alexander Mayo Website</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">Alexander Mayo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <h1>Project 5</h1>
+                            <h2 class="subheading">Alarm Clock Case 2</h2>
+                            <span class="meta">
+                                Posted by
+                                <a href="#!">Alexander Mayo</a>
+                                on October 28, 2023
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                                    <p>While designing a laser-cut alarm clock casing would be somewhat complicated to do from scratch, this was not necessary for this particular project. Instead, the design I used was a combination of two previous designs; the 3D printed alarm clock casing seen in Project 3, and the laser-cut box we designed as a homework assignment. The design of the front plate was virtually identical to my design for Project 3, including an upper and lower window for the display and the buttons, respectively. Recreating that design, therefore, was a simple copy-paste operation. From here, it was necessary to add 3-millimeter slats, identical to those seen on the laser-cut box, to allow the front face to fit in with other faces, and the front face was complete. The remaining five faces also required these slats; however, these slats were attached to simple rectangles, without any holes. This process was time consuming, but not particularly difficult. I did face a few minor difficulties, mostly relating to my relative inexperience with Fusion 360. The first related to making a model with components; while not an impediment to the actual function of the model, the way I organized the components ended up being somewhat unintuitive, with multiple components nested inside one another. The second related to extruding; when selecting surfaces to extrude, selecting a face would sometimes seem to cause the face on the opposite side of the model to become selected. I believe this is somehow related to the “project” feature in Fusion 360 as its extensive use was necessary in creating this model, but it was not needed for previous projects. From here, it was a simple matter of importing each of the faces into Lightburn and performing the laser cut.</p>
+                                    <figure>
+                                    <img src="assets/img/first_iteration_model.png"
+                                    width="600",
+                                    height="auto">
+                                    <figcaption>Model of the first iteration.</figcaption>
+                                    </figure>
+                                    <figure>
+                                    <img src="assets/img/first_iteration_lightburn.png"
+                                    width="600",
+                                    height="auto">
+                                    <figcaption>Lightburn rendering of the first iteration.</figcaption>
+                                    </figure>
+                                    <figure>
+                                    <img src="assets/img/first_iteration_case.jpg"
+                                    width="600",
+                                    height="auto">
+                                    <figcaption>The first iteration of the case.</figcaption>
+                                    </figure>
+                                    <p>While the previous alarm clock casing required four design iterations, this design required only two. The first was a cut based on the model described above. While the fitting of the case was excellent (indeed, slightly better than 3D printed casing,) I realized that I had omitted several key features that were present in the previous design. Specifically, this design was missing the changes I had added in the third iteration of the 3D printed casing. The first of these two changes, enlarging the lower window to fit one’s finger, was a very simple change, requiring the changing of only a single measurement in the front face sketch. The second change, the addition of a hole for a charging port, was slightly more complicated; for reasons I still do not understand, attempting to make the hole by modifying the original sketch simply did not work; the extrude menu performed a “shake” animation that I have otherwise never seen, and the extrude did not occur. The modification was very simple once I discovered the solution to this problem, which was to make a new sketch. One advantage of laser cutting over 3D printing became apparent at this stage; it was only necessary to cut the two faces which I actually changed, rather than recreating the entire model as was necessary with 3D printing. Furthermore, despite being cut from different sheets, I faced no issues with fitting the new faces with the existing faces. 3D printing a design with multiple modular components would likely be far more difficult, as the material is less malleable and measurements can often be imprecise in 3D printing.</p>
+                                    <figure>
+                                    <img src="assets/img/second_iteration_model.png"
+                                    width="600",
+                                    height="auto">
+                                    <figcaption>Model of the second iteration.</figcaption>
+                                    </figure>
+                                    <figure>
+                                    <img src="assets/img/second_iteration_lightburn.png"
+                                    width="600",
+                                    height="auto">
+                                    <figcaption>Lightburn rendering of the second iteration. Note that only the updated parts are seen here.</figcaption>
+                                    </figure>
+                                    <figure>
+                                    <img src="assets/img/second_iteration_case.jpg"
+                                    width="600",
+                                    height="auto">
+                                    <figcaption>The second iteration of the case.</figcaption>
+                                    </figure>
+                                    <p>I learned several important things with this assignment. The first was in the beginning of the design process, when I combined multiple previous designs into one; this saved me a lot of time and effort, which I greatly appreciated, while still creating a useful end product. I also gained a greater understanding of the advantages and disadvantages of laser cutting compared to 3D printing. As I already mentioned, it is far easier to build a design in multiple components, and to swap out individual parts for improved parts later on. Additionally, another advantage is that of time. While it takes somewhat longer to create the initial design, it is much faster to cut the faces as opposed to 3D printing a model. Furthermore, after the initial design is created, revisions tend to take the same amount of time for both methods, so for more complicated designs that may require many iterations, this effect becomes far more pronounced. There is one notable disadvantage to laser cutting; it is far less versatile than 3D printing in terms of what kind of designs it can create. Laser cutting is only useful if the design consists entirely of thin, flat faces, such as a rectangular, hollow design for an alarm cover. However, it is usually very obvious whether laser cutting is an appropriate choice, so one is unlikely to invest significant time into a laser cutting design only to find that its use is impossible. Overall, laser cutting is a useful, if situational, technique that I am grateful to have experimented with.</p>
+
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; Alexander Mayo 2023</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
