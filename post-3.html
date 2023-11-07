@@ -36,7 +36,13 @@
               padding: 15px;
               text-align: center;
             }
+
 </style>
+            div.conteiner{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content:flex-start;
+            }
     </head>
     <body>
         <!-- Navigation-->
@@ -80,21 +86,21 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
                                     <p>The project began with some soldering, which was an entirely new experience for me. Admittedly, it was not an experience I particularly enjoyed; fine motor skills are not my strong suit, I found the instructions difficult to parse, especially in the loud, chaotic environment of the classroom, and the thought of accidentally touching or otherwise mishandling any heated components was deeply unappealing and, given what I know about myself, not outside of the realm of possibility. Still, I did make an attempt at this novel activity. While it was somewhat interesting, I have no particular interest in repeating this action. In contrast, my partner found it to be quite captivating, so he took charge of that particular component of the project. The opposite was true for the 3D design portion of the project as much of the modeling was done by me, though we both discussed the various decisions that went into creating the model.</p>
-
+                                    <div class = "conteiner">
                                     <div class="gallery">
                                         <a target="_blank" href="assets/img/soldering/soldering_1.jpg">
                                         <img src="assets/img/soldering/soldering_1.jpg" width="600" height="auto">
                                         </a>
                                         <div class="desc">Our soldering workspace (image 1 of 2)</div>
                                     </div>
-
+                                
                                     <div class="gallery">
                                         <a target="_blank" href="assets/img/soldering/soldering_2.jpg">
                                         <img src="assets/img/soldering/soldering_2.jpg" width="600" height="auto">
                                         </a>
                                         <div class="desc">Our soldering workspace (image 2 of 2)</div>
                                     </div>
-
+                              
                                     <div class="gallery">
                                         <a target="_blank" href="assets/img/soldering/soldering_3.jpg">
                                         <img src="assets/img/soldering/soldering_3.jpg" width="600" height="auto">
@@ -108,11 +114,11 @@
                                         </a>
                                         <div class="desc">Working on soldering (image 2 of 2)</div>
                                     </div>
-
+                                    </div>
                                     <p>The idea behind our various designs was to create something simple that captured the most important parts of our design and could be quickly and easily printed, and to work from there. This resulted in four distinct iterations of our design, all of which ended up actually being printed. (Unlike my previous project, the printing process for this project was highly uneventful with no interesting failures.) The first design simply included the front plate of the alarm; it was a simple slab with an upper and lower window, for the display and the buttons respectively. The design was entirely flat and meant to exactly cover the circuit board with little to no additional coverage; neither of these elements were meant to survive into the final product. The thickness was somewhat arbitrarily chosen as 5 mm, as this allowed for a fairly quick yet robust print. Speed, rather than quality, was a priority: therefore, the layers used in 3d printing were quite large as the “DRAFT” settings were used in Prusa Slicer, something that would be maintained for the next two iterations of the design as well. This resulted in an extremely short print time of roughly 40 minutes. The goal at this very early stage was to ensure the windows lined up properly: therefore, the positioning, length, and height of each of the displayed elements were relevant quantities for which measurements needed to be taken, as well as the dimensions of the circuit board itself. Rather than writing down these measurements, we took pictures of the caliper displays as they measured the appropriate quantity, as seen below.</p>
 
                                     <br>
-                                    
+                                    <div class = "conteiner">
                                     <div class="gallery">
                                         <a target="_blank" href="assets/img/first_iteration/first_iteration_schematic.jpg">
                                         <img src="assets/img/first_iteration/first_iteration_schematic.jpg" width="600" height="auto">
@@ -136,7 +142,7 @@
 
                                     <div class="gallery">
                                         <a target="_blank" href="assets/img/first_iteration/display_width.jpg">
-                                        <img src="assets/img/first iteration/display_width.jpg" width="600" height="auto">
+                                        <img src="assets/img/first_iteration/display_width.jpg" width="600" height="auto">
                                         </a>
                                         <div class="desc">Width of the displays.</div>
                                     </div>
@@ -164,7 +170,7 @@
 
                                     <div class="gallery">
                                         <a target="_blank" href="assets/img/first_iteration/button_width.jpg">
-                                        <img src="assets/img/first iteration/button_width.jpg" width="600" height="auto">
+                                        <img src="assets/img/first_iteration/button_width.jpg" width="600" height="auto">
                                         </a>
                                         <div class="desc">Width of the buttons.</div>
                                     </div>
@@ -203,13 +209,13 @@
                                         </a>
                                         <div class="desc">3D print of the first iteration.</div>
                                     </div>
-
+                                </div>
                                     <br>
 
                                     <p>The second iteration of our design made a single addition to the first: the addition of an outer wall to contain the circuit board. The thickness of the wall was somewhat arbitrary; we set it to 3 millimeters. However, the height of the wall was not arbitrary at all; it was based on the only measurement that needed to be taken at this stage. Specifically, it was based on the height of the circuit board at its tallest point, which turned out to be the apparatus in the lower left corner. Combined with the thickness of the front plate, the walls needed to be 16 millimeters in total. These walls approximately doubled the print time, to roughly 80 minutes, which was still quite manageable.</p>
 
                                     <br>
-
+                                    <div class = "conteiner">
                                     <div class="gallery">
                                         <a target="_blank" href="assets/img/second_iteration/second_iteration_schematic.jpg">
                                         <img src="assets/img/second_iteration/second_iteration_schematic.jpg" width="600" height="auto">
@@ -244,13 +250,13 @@
                                         </a>
                                         <div class="desc">3D print of the second iteration.</div>
                                     </div>
-
+                                </div>
                                     <br>
 
                                     <p>Once it had been verified that the front “shell” for the circuit board fit properly, the third iteration of the design was one involving only minor updates; the overall shape of this iteration was the same as the second. Specifically, there were two such updates. First, because the lower window was quite small and, with the addition of the walls, far away from the buttons, it was essentially impossible for a person to actually press these buttons with just their finger. After some discussion regarding creating some sort of recessed finger well, while keeping the actual window the same size, it was decided to simply enlarge the window to be the size of a finger. For this, additional measurements needed to be taken regarding the vertical clearance from the buttons to the nearest obstruction above, and the edge of the circuit below. The second improvement was including a small hole for a charging port. For this, it was necessary to measure the distance between the hole and the edge of the port for proper positioning, and the dimensions of the plug to ensure that it would fit in the hole. The design modifications mentioned required a small amount of support material for the first time this project, due to the way the increased window was designed. However, because the design itself only removed material compared to the previous iteration, the print time was roughly the same as the second iteration, at roughly 80 minutes.</p>
 
                                     <br>
-
+                                    <div class = "conteiner">
                                     <div class="gallery">
                                         <a target="_blank" href="assets/img/third_iteration/third_iteration_schematic_front.jpg">
                                         <img src="assets/img/third_iteration/third_iteration_schematic_front.jpg" width="600" height="auto">
@@ -313,13 +319,13 @@
                                         </a>
                                         <div class="desc">3D print of the third iteration.</div>
                                     </div>
-
+                                </div>
                                     <br>
 
                                     <p>Following the fitting of the third iteration to the circuit board to ensure all elements were placed correctly and sensibly, work began on the fourth and final iteration of the alarm cover. The goal of this version was simple; add a back plate to this design and a means of attaching it to the front with the circuit board inside. A very simple solution presented itself; attach six pegs to the back of the previous design, and create a simple plate with six holes of the appropriate size in the appropriate locations. The pegs were each 3 millimeters in diameter and 5 millimeters long, while the holes were 3.2 millimeters in diameter and 5 millimeters deep. This necessitated making the outer wall slightly thicker, from 3 millimeters to 5 millimeters, to accommodate the pegs. Unlike the other iterations, no measurements needed to be taken of the circuit board as all improvements related to the outer casing and not the circuitry within. The additional plate, coupled with the fact that as the final iteration, this design used Prusa’s “QUALITY” print settings, meant that this was by far the longest print, at roughly 4.5 hours. However, that was still quite manageable, owing to our small casing that uses only very simple shapes. The pegs proved to be unstable, snapping off as soon as we attempted to put the case together, but the system seemed fundamentally sound.</p>
 
                                     <br>
-
+                                    <div class = "conteiner">
                                     <div class="gallery">
                                         <a target="_blank" href="assets/img/fourth_iteration/fourth_iteration_schematic_front.jpg">
                                         <img src="assets/img/fourth_iteration/fourth_iteration_schematic_front.jpg" width="600" height="auto">
@@ -361,7 +367,7 @@
                                         </a>
                                         <div class="desc">3D print of the fourth iteration.</div>
                                     </div>
-
+                                </div>
                                     <br>
 
                                     <p>With slightly more time, several minor improvements could have been made to the design. As mentioned, the pegs used to combine the front and back components of the cover could have been made more robust and less prone to breakage, likely by making them wider and/or shorter. Furthermore, covering the spaces between the buttons and displays, as well as creating covers for the buttons themselves, could have been used to minimize the amount of exposed circuitry and make the design more comfortable to operate. Finally, while not a functional component, with more time we would have customized the appearance of the casing to appear more aesthetically pleasing or amusing.</p>
